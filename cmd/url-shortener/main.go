@@ -5,6 +5,7 @@ import (
 	"os"
 
 	"github.com/stevenstr/url-shortener/internal/config"
+	"github.com/stevenstr/url-shortener/internal/storage/sqlite"
 )
 
 const (
@@ -24,6 +25,13 @@ func main() {
 	log.Debug("debug messages are enabled...")
 
 	// TODO: init  storage: sqlite
+	storage, err := sqlite.New(cfg.StoragePath)
+	if err != nil {
+		slog.Error(err.Error())
+		os.Exit(1)
+	}
+
+	_ = storage
 
 	// TODO: init router: chi, "chi render"
 
