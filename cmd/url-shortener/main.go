@@ -1,13 +1,13 @@
 package main
 
 func main() {
-	// TODO: init config
+	// TODO: init config: cleanenv
 
-	// TODO: init logger
+	// TODO: init logger: slog (log/slog)
 
-	// TODO: init  storage
+	// TODO: init  storage: sqlite
 
-	// TODO: init router
+	// TODO: init router: chi, "chi render"
 
 	// TODO: run server
 
