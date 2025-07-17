@@ -1,7 +1,12 @@
 package main
 
+import (
+	"github.com/stevenstr/url-shortener/internal/config"
+)
+
 func main() {
 	// TODO: init config: cleanenv
+	cfg := config.MustLoad()
 
 	// TODO: init logger: slog (log/slog)
 
