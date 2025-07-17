@@ -1,4 +1,4 @@
-env: "local" # Виды конфигов local, dev, prod
+env: "prod" # Виды конфигов local, dev, prod
 storage_path: ".storage/storage.db" # путь до DB
 http_server:
   address: "localhost:8082"
