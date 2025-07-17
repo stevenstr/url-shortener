@@ -1,9 +1,7 @@
 env: "local" # Виды конфигов local, dev, prod
 storage_path: ".storage/storage.db" # путь до DB
 http_server:
-  port: 8082
-  host: localhost
-  # address: "localhost:8082"
+  address: "localhost:8082"
 
   # таймаут, то есть время на чтение запроса от клиента
   # и такое же время на отправку ответа клиенту
@@ -13,5 +11,5 @@ http_server:
   # время жизни соединения с клиентом
   # если один клиент много запрашивает - одно соединение реиспользуем
   # если он долго не использует соединение - обрываем через 60сек
-  iddle_timeout: 60s 
+  idle_timeout: 60s 
 
